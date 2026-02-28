@@ -1,6 +1,9 @@
 {
   "version": 2,
   "routes": [
+    { "src": "/manifest.webmanifest", "dest": "/manifest.webmanifest" },
+    { "src": "/registerSW.js", "dest": "/registerSW.js" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ],
   "outputDirectory": "dist"
