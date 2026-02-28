@@ -1,0 +1,64 @@
+
+:root {
+  font-family: 'Segoe UI', 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #f3f6fa;
+  background: linear-gradient(135deg, #181c2f 0%, #2a2342 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --accent-orange: #ff7e29;
+  --accent-red: #ff3b3b;
+  --accent-yellow: #ffd600;
+  --accent-blue: #3b8cff;
+  --surface-dark: #23243a;
+  --surface-card: #2e2f4a;
+  --border-radius: 18px;
+  --shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+}
+
+  font-weight: 500;
+  color: var(--accent-blue);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent-orange);
+}
+
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181c2f 0%, #2a2342 100%);
+}
+
+  font-size: 2.6em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--accent-blue);
+  line-height: 1.1;
+}
+
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--accent-orange);
+  color: #fff;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background 0.25s, box-shadow 0.25s;
+}
+  background: var(--accent-red);
+  box-shadow: 0 6px 32px 0 rgba(255,123,41,0.25);
+}
+  outline: 3px solid var(--accent-yellow);
+}
+
+
