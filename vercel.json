@@ -2,6 +2,7 @@
   "version": 2,
   "routes": [
     { "src": "/sw.js", "dest": "/sw.js" },
+    { "src": "/workbox-.*\\.js", "dest": "/workbox-:splat.js" },
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/manifest.webmanifest", "dest": "/manifest.webmanifest" },
     { "src": "/registerSW.js", "dest": "/registerSW.js" },
