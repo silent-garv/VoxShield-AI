@@ -13,7 +13,9 @@ exports.analyzeTranscript = async (transcript) => {
   "detectedScamType": "OTP scam" | "Bank scam" | "Fraud" | "Safe",
   "recommendedAction": "what user should do"
 }
-
+//use of Ai to analyze transcript and determine if it is a scam call. Return response as JSON with these fields:
+//{
+//  "riskScore": number (0-100),
 Transcript: "${transcript}"`;
 
   const body = {
