@@ -6,6 +6,12 @@
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/manifest.webmanifest", "dest": "/manifest.webmanifest" },
     { "src": "/registerSW.js", "dest": "/registerSW.js" },
+    { "src": "/icon-192x192.png", "dest": "/icon-192x192.png" },
+    { "src": "/icon-512x512.png", "dest": "/icon-512x512.png" },
+    { "src": "/icon.png", "dest": "/icon.png" },
+    { "src": "/splash.png", "dest": "/splash.png" },
+    { "src": "/splash-1024x1024.png", "dest": "/splash-1024x1024.png" },
+    { "src": "/vite.svg", "dest": "/vite.svg" },
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ],
