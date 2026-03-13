@@ -16,7 +16,12 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 backend/.env
+backend/.env.local
+backend/.env.*.local
 
 # Firebase & sensitive credentials
 **/voxshield-ai-firebase-adminsdk-*.json
