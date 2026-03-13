@@ -59,3 +59,28 @@ export async function generateSecurityTip(): Promise<string | null> {
 		return null;
 	}
 }
+
+export async function sendChatMessage(userMessage: string): Promise<string> {
+	try {
+		const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+		const res = await fetch(`${backendUrl}/api/chat`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				message: userMessage,
+			}),
+		});
+
+		if (!res.ok) {
+			throw new Error(`API error: ${res.statusText}`);
+		}
+
+		const data = await res.json();
+		return data.message || 'No response from server';
+	} catch (error) {
+		console.error('Chat error:', error);
+		throw error;
+	}
+}
