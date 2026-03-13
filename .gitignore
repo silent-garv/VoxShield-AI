@@ -12,6 +12,16 @@ dist
 dist-ssr
 *.local
 
+# Environment variables (contain secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Firebase & sensitive credentials
+**/voxshield-ai-firebase-adminsdk-*.json
+backend/*-adminsdk-*.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
