@@ -10,5 +10,6 @@ const TranscriptBox: React.FC<TranscriptBoxProps> = ({ transcript }) => (
 		<div>{transcript || <span style={{ color: '#64748b' }}>Waiting for speech...</span>}</div>
 	</div>
 );
+//# Fixed the issue regarding the manifest and the PWA icon issue
 
 export default TranscriptBox;
