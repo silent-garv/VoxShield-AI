@@ -12,12 +12,62 @@ dist
 dist-ssr
 *.local
 
-# Environment variables (contain secrets)
+# Environment variables (contain secrets) - NEVER COMMIT THESE
 .env
 .env.local
 .env.*.local
 .env.development.local
 .env.test.local
+.env.production.local
+
+# Private keys and credentials
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+private_key*.txt
+
+# Firebase service account files
+*-firebase-*.json
+serviceAccountKey.json
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+build/
+.next/
+out/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Secrets and sensitive data
+secrets/
+sensitive/
+credentials/
+keys/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
 .env.production.local
 backend/.env
 backend/.env.local
