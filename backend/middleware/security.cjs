@@ -19,7 +19,7 @@ const createLimiter = (windowMs = 900000, maxRequests = 100) => {
 // CORS configuration
 const corsOptions = {
   origin: (origin, callback) => {
-    const allowedOrigins = (process.env.ALLOW_ORIGINS || 'http://localhost:5173,http://localhost:3000').split(',');
+    const allowedOrigins = (process.env.ALLOW_ORIGINS || 'http://localhost:5173,http://localhost:5174,http://localhost:3000').split(',');
     
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);

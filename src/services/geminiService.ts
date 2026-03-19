@@ -62,8 +62,8 @@ export async function generateSecurityTip(): Promise<string | null> {
 
 export async function sendChatMessage(userMessage: string): Promise<string> {
 	try {
-		const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
-		const res = await fetch(`${backendUrl}/api/chat`, {
+		// Use relative path to let Vite proxy handle routing to backend
+		const res = await fetch('/api/chat', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

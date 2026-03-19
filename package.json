@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node backend/server.js",
+    "dev:frontend": "vite",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:frontend\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -40,6 +42,7 @@
     "@types/react-dom": "^19.2.3",
     "@vercel/node": "^3.2.0",
     "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^8.2.2",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",

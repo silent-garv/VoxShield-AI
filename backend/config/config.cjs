@@ -11,7 +11,7 @@ const config = {
   internalApiKey: process.env.INTERNAL_API_KEY,
 
   // CORS config
-  allowedOrigins: (process.env.ALLOW_ORIGINS || 'http://localhost:5173,http://localhost:3000').split(','),
+  allowedOrigins: (process.env.ALLOW_ORIGINS || 'http://localhost:5173,http://localhost:5174,http://localhost:3000').split(','),
 
   // Rate limiting
   rateLimit: {
